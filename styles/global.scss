@@ -1,5 +1,4 @@
 $max-width: 1024px;
-$min-width: 360px;
 
 @font-face {
   font-family: 'Univers';
@@ -17,6 +16,14 @@ html {
   color: #f3f3ff;
 }
 
+body {
+  font-family: 'Univers', Helvetica, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: subpixel-antialiased;
+  text-rendering: optimizeLegibility;
+  color: #ddd;
+}
+
 .work-logo-wrapper {
   max-width: 250px;
 }
@@ -29,11 +36,6 @@ html {
 .gray-filter {
   -webkit-filter: grayscale(65%);
   filter: grayscale(65%);
-}
-
-.outer-wrapper {
-  max-width: $max-width;
-  min-width: $min-width;
 }
 
 .work-detail-outer {
@@ -104,22 +106,22 @@ html {
   }
 }
 
-.open .close-icon {
+.open {
   opacity: 1;
-}
 
-.close-icon {
-  opacity: 0;
-  transform: rotate(45deg);
-  position: absolute;
-  font-size: 2em;
-  font-family: 'Helvetica';
-  top: 15px;
-  font-weight: 400;
-  right: 20px;
+  .close-icon {
+    opacity: 0;
+    transform: rotate(45deg);
+    position: absolute;
+    font-size: 2em;
+    font-family: 'Helvetica';
+    top: 15px;
+    font-weight: 200;
+    right: 20px;
 
-  &:hover {
-    transform: rotate(45deg) scale(1.15);
+    &:hover {
+      transform: rotate(45deg) scale(1.15);
+    }
   }
 }
 
@@ -166,6 +168,7 @@ html {
 
 .work-section {
   width: 100%;
+  margin: 0 auto;
   margin-bottom: 25px;
   display: flex;
   flex-direction: column;
@@ -180,18 +183,10 @@ html {
   }
 }
 
-.work-section ul {
-  @apply flex flex-row flex-wrap justify-center;
-}
-
 .work-detail-link {
   position: absolute;
   width: 100%;
   height: 100%;
-}
-
-.tech-pill {
-  padding: 1px 8px;
 }
 
 .page-wrapper {
@@ -204,12 +199,6 @@ html {
 
 .hero-section {
   width: 100%;
-  color: #ddd;
-  //letter-spacing: 0.5px;
-}
-
-.contact-section {
-  text-align: right;
 }
 
 .splash-image {
@@ -220,14 +209,6 @@ html {
   background-size: cover;
   position: fixed;
   right: 30%;
-}
-
-body {
-  font-family: 'Univers', 'Neue Haas Grotesk Display Pro', Helvetica, sans-serif;
-  overflow-x: hidden;
-  -webkit-font-smoothing: subpixel-antialiased;
-
-  text-rendering: optimizeLegibility;
 }
 
 .spectral {
@@ -242,9 +223,7 @@ body {
   bottom: 0;
 }
 
-//responsive queries
-
-// max-width indicates upper-limit
+// RESPONSIVE STYLING
 
 @media (max-width: 690px) {
   .work-item {
@@ -254,7 +233,13 @@ body {
   }
 }
 
-@media (max-width: $max-width) {
+@media (max-width: 720px) {
+  .work-item-wrapper.open {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
   .media-box {
     max-width: 445px;
     margin-bottom: 20px;
@@ -262,11 +247,5 @@ body {
   }
   .work-item-wrapper.open {
     max-width: 600px;
-  }
-}
-
-@media (max-width: 720px) {
-  .work-item-wrapper.open {
-    margin-top: 10px;
   }
 }
