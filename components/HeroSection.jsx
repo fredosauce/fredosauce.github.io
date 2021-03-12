@@ -1,7 +1,9 @@
+// Currently no need to break out about-me and contact-section into their own components; will re-assess based on new content
+
 const HeroSection = () => {
   return (
-    <div class='hero-section'>
-      <div class='about-me'>
+    <div className='hero-section'>
+      <div className='about-me'>
         <p>
           Fredo Chen is a
           <br />
@@ -12,24 +14,24 @@ const HeroSection = () => {
           based in Los Angeles
         </p>
       </div>
-      <div class='contact-section'>
-        <ul class='contact-list'>
-          <li class=''>
+      <div className='contact-section'>
+        <ul className='contact-list'>
+          <li>
             <a href='https://linkedin.com/in/fredochen' target='_blank'>
               linkedin
             </a>
           </li>
-          <li class=''>
+          <li>
             <a href='/chenfredo-resume.pdf' target='_blank'>
               resumé
             </a>
           </li>
-          <li class=''>
+          <li>
             <a href='https://github.com/fredosauce' target='_blank'>
               github
             </a>
           </li>
-          <li class=''>
+          <li>
             <a href='mailto:chenfredo@gmail.com' target='_blank'>
               email
             </a>

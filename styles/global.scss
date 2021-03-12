@@ -21,7 +21,6 @@ body {
   overflow-x: hidden;
   -webkit-font-smoothing: subpixel-antialiased;
   text-rendering: optimizeLegibility;
-  color: #ddd;
 }
 
 .work-logo-wrapper {
@@ -78,10 +77,13 @@ body {
   }
 }
 
-.contact-list li a {
-  color: rgba(47, 255, 210, 0.75);
-  &:hover {
-    color: rgba(47, 255, 210, 0.95);
+.contact-section {
+  text-align: right;
+  .contact-list li a {
+    color: rgba(47, 255, 210, 0.75);
+    &:hover {
+      color: rgba(47, 255, 210, 0.95);
+    }
   }
 }
 
@@ -106,22 +108,22 @@ body {
   }
 }
 
-.open {
+.open .close-icon {
   opacity: 1;
+}
 
-  .close-icon {
-    opacity: 0;
-    transform: rotate(45deg);
-    position: absolute;
-    font-size: 2em;
-    font-family: 'Helvetica';
-    top: 15px;
-    font-weight: 200;
-    right: 20px;
+.close-icon {
+  opacity: 0;
+  transform: rotate(45deg);
+  position: absolute;
+  font-size: 2em;
+  font-family: 'Helvetica';
+  top: 15px;
+  font-weight: 200;
+  right: 20px;
 
-    &:hover {
-      transform: rotate(45deg) scale(1.15);
-    }
+  &:hover {
+    transform: rotate(45deg) scale(1.15);
   }
 }
 
@@ -143,7 +145,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    position: fixed;
+    position: fixed !important;
     z-index: 1;
     overflow: hidden;
     width: 95%;
@@ -173,6 +175,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  p {
+    color: #ddd;
+  }
   & ul {
     overflow-x: scroll;
     -ms-overflow-style: none; /* Internet Explorer 10+ */
@@ -199,6 +204,7 @@ body {
 
 .hero-section {
   width: 100%;
+  color: #ddd;
 }
 
 .splash-image {

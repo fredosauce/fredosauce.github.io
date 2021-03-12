@@ -21,37 +21,37 @@
 
       .work-item {
         .work-item-wrapper {
-          @include apply('overflow-hidden relative rounded-md border-1');
+          @include apply('overflow-hidden relative rounded-xl');
 
           .work-media-wrapper {
             @include apply('absolute z-0');
 
             img {
-              @include apply('gray-filter relative');
+              @include apply('relative');
             }
           }
 
           .work-item-detail-wrapper {
             @include apply(
-              'cursor-pointer ease-out space-x-4 bg-black bg-opacity-60 hover:bg-opacity-80 relative z-0 justify-center'
+              'flex flex-col flex-nowrap items-center cursor-pointer ease-out space-x-4 bg-black bg-opacity-60 hover:bg-opacity-80 relative z-0 justify-center'
             );
 
             .work-title-wrapper h1 {
               @include apply(
-                'text-xl font-semibold cursor-pointer tracking-wider spectral'
+                'text-xl font-semibold cursor-pointer tracking-wider'
               );
             }
           }
 
           .work-detail-outer {
             @include apply(
-              'px-8 lg:my-24 work-detail-outer mx-auto flex flex-col-reverse lg:flex-row-reverse items-center justify-around my-16'
+              'px-8 lg:my-24 mx-auto flex flex-col-reverse lg:flex-row-reverse items-center justify-around my-16'
             );
 
             .text-box {
               h1 {
                 @include apply(
-                  'text-2xl md:text-3xl cursor-pointer spectral inline-block mr-4'
+                  'text-2xl md:text-3xl cursor-pointer inline-block mr-4'
                 );
               }
               h2 {
@@ -59,6 +59,7 @@
               }
               p {
                 @include apply('text-base leading-5 mt-4');
+                text-align: left;
               }
 
               .pill-wrap {
@@ -73,7 +74,7 @@
               }
 
               .media-box {
-                @include apply('border-gray-50 border-1');
+                @include apply('border-gray-50 ');
               }
             }
           }

@@ -1,3 +1,5 @@
+// Links are constructed in a convoluted way currently, but I'm okay with it
+
 import { GitHub, ExternalLink } from 'react-feather';
 
 const Links = ({ selectedWork }) => {
@@ -5,7 +7,7 @@ const Links = ({ selectedWork }) => {
   const RepoLink = () =>
     selectedWork.repo ? (
       <a
-        class='text-blue-400 text-xs hover:underline'
+        className='text-blue-400 text-xs hover:underline'
         href={selectedWork.repo}
         target='_blank'
       >
@@ -15,7 +17,7 @@ const Links = ({ selectedWork }) => {
   const SiteLink = () =>
     selectedWork.siteUrl ? (
       <a
-        class='text-blue-400 text-xs hover:underline'
+        className='text-blue-400 text-xs hover:underline'
         href={selectedWork.siteUrl}
         target='_blank'
       >
@@ -25,7 +27,7 @@ const Links = ({ selectedWork }) => {
 
   return (
     <>
-      <div class='text-center inline-block'>
+      <div className='text-center inline-block'>
         {RepoLink() !== null && SiteLink() !== null ? (
           <>
             <SiteLink />

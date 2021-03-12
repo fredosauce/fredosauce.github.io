@@ -34,15 +34,14 @@ const WorkList = ({ workItems, match }) => {
           <li className='work-item' key={key}>
             <Overlay isSelected={isSelected} />
             <motion.div
-              className={`work-item-wrapper  ${
-                isSelected && 'open rounded-xl'
-              }`}
+              className={`work-item-wrapper  ${isSelected && 'open'}`}
               transition={isSelected ? openSpring : closeSpring}
               layout
             >
               <div className='work-media-wrapper '>
                 <motion.img
                   layoutId={item.id + 'Media'}
+                  className='gray-filter'
                   src={primaryMediaPath}
                   layout
                 />
@@ -57,6 +56,7 @@ const WorkList = ({ workItems, match }) => {
                 <div className='work-title-wrapper'>
                   <motion.h1
                     layout
+                    className='spectral'
                     dangerouslySetInnerHTML={{ __html: item.title }}
                   ></motion.h1>
                 </div>
@@ -66,6 +66,7 @@ const WorkList = ({ workItems, match }) => {
                 <motion.div className='text-box'>
                   <motion.h1
                     layout
+                    className='spectral'
                     dangerouslySetInnerHTML={{ __html: item.title }}
                   ></motion.h1>
                   <Links selectedWork={item} />
@@ -76,7 +77,7 @@ const WorkList = ({ workItems, match }) => {
                   <p>{item.blurb}</p>
                   <div className='pill-wrap'>
                     {item.tech.map((techName, index) => (
-                      <div class='tech-pill'>{text}</div>
+                      <div class='tech-pill'>{techName}</div>
                     ))}
                   </div>
                 </motion.div>
