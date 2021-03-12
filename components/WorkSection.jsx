@@ -1,4 +1,4 @@
-import Links from '/Links';
+import Links from './Links';
 import { motion, useMotionValue } from 'framer-motion';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 
