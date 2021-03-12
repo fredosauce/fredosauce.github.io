@@ -1,0 +1,88 @@
+export const workItems = [
+  {
+    title: 'ReacType',
+    id: 'reactype',
+    year: '2020',
+    group: 'OS Labs',
+    media: ['/reactype-lg.gif'],
+    client: null,
+    blurb:
+      'Prototyping tool that allows users to quickly mock-up layouts and export them as code templates in Typescript. My role involved rebuilding the GUI as a drag-and-drop canvas, extending export options to include Nextjs, and implementing unit tests',
+    siteUrl: 'https://reactype.io/',
+    repo: 'https://github.com/open-source-labs/ReacType',
+    tech: ['react', 'typescript', 'materialui', 'jest', 'node', 'electron'],
+    logo: '/logo-reactype.png',
+  },
+  {
+    title: 'Identity Shifters',
+    id: 'shifters',
+    year: '2019',
+    group: 'rpa',
+    media: ['/shifters-lg.png'],
+    client: 'In-house',
+    blurb:
+      'Built long-scrolling, fully-responsive microsite to showcase agency research and insights on demographic profile of Generation Z',
+    siteUrl: 'https://identityshifters.rpa.com/',
+    repo: null,
+    tech: ['html', 'sass', 'javascript', 'jquery', 'bootstrap', 'aos.js'],
+    logo: '/logo-rpa.png',
+  },
+  {
+    title: '<span class="italic">ampm</span>',
+    id: 'ampm',
+    year: '2018',
+    group: 'rpa',
+    media: ['/ampm-lg.png'],
+    client: '<span class="italic">ampm</span>',
+    blurb:
+      'Served as front-end lead for ampm.com redesign and developed fully-responsive layouts with customizable color themes. Worked closely with creatives and back-end engineers to integrate and launch',
+    siteUrl: 'https://www.ampm.com',
+    repo: null,
+    tech: ['html', 'sass', 'bootstrap', 'javascript', 'masonry.js', 'slick.js'],
+    logo: '/logo-ampm.png',
+  },
+  {
+    title: 'Arco MX',
+    id: 'arco',
+    year: '2017-2018',
+    group: 'rpa',
+    media: ['/arco-mx-lg.png'],
+    client: 'Arco MX',
+    blurb:
+      'Front-end development of regional Arco Mexico site, as well as regular and promotional site updates for Arco national website.',
+    siteUrl: 'https://www.arco.com/en-mx/mexico/',
+    repo: null,
+    tech: ['html', 'sass', 'bootstrap', 'angularjs', 'lodash'],
+    logo: '/logo-arco.png',
+  },
+  // {
+  //   title: 'FairPay',
+  //   year: '2020',
+  //   group: 'Open source / ',
+  //   media: null,
+  //   client: null,
+  //   blurb:
+  //     'Platform for industry professionals to anonymously share and analyze salary and compensation by demographic data.',
+  //   link: '',
+  // },
+  // {
+  //   title: 'Southwest Airlines',
+  //   year: '2017-2019',
+  //   group: 'rpa',
+  //   media: null,
+  //   client: null,
+  //   blurb:
+  //     'Built an interactive kiosk display for SWA business conferences, dynamically generating animated flight paths on a map for user-selected origins and destinations',
+  //   link: '',
+  // },
+  // {
+  //   title: 'Honda',
+  //   year: '2017-2019',
+  //   group: 'rpa',
+  //   media: null,
+  //   client: null,
+  //   blurb:
+  //     'Built "Which Civic Are You?" microsite & personality quiz, rich media banners for Happy Honda Days and 2017 Ridgeline launch, and contributed to Honda Certified Pre-Owned Vehicles site',
+  //   link: '',
+  // },
+];
