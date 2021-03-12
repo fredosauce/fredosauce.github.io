@@ -1,0 +1,262 @@
+$max-width: 1024px;
+$min-width: 360px;
+
+html {
+  background-color: #090909;
+  color: #f3f3ff;
+}
+
+.work-logo-wrapper {
+  max-width: 250px;
+}
+
+.work-media-wrapper {
+  top: 20%;
+  transform: scale(2.25);
+}
+
+.gray-filter {
+  -webkit-filter: grayscale(65%);
+  filter: grayscale(65%);
+}
+
+.outer-wrapper {
+  max-width: $max-width;
+  min-width: $min-width;
+}
+
+.work-detail-outer {
+  max-width: ($max-width + 55px);
+}
+
+.media-box {
+  max-width: 600px;
+  width: 50%;
+  img {
+    border-radius: 8px;
+    filter: grayscale(25%);
+  }
+}
+
+.text-box {
+  max-width: 420px;
+  svg {
+    display: inline-block;
+  }
+  h1 {
+    vertical-align: middle;
+  }
+}
+
+.work-item {
+  position: relative;
+  height: 110px;
+  width: 300px;
+  margin-bottom: 1rem;
+  &:nth-child(odd) {
+    margin-right: 1rem;
+  }
+  a {
+    color: rgba(47, 255, 210, 0.75);
+    &:hover {
+      color: rgba(47, 255, 210, 0.95);
+      text-decoration: none;
+    }
+  }
+}
+
+.contact-list li a {
+  color: rgba(47, 255, 210, 0.75);
+  &:hover {
+    color: rgba(47, 255, 210, 0.95);
+  }
+}
+
+.overlay {
+  z-index: 1;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.95);
+  will-change: opacity;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  a {
+    display: block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.open .close-icon {
+  opacity: 1;
+}
+
+.close-icon {
+  opacity: 0;
+  transform: rotate(45deg);
+  position: absolute;
+  font-size: 2em;
+  font-family: 'Neue Haas Grotesk Display Pro';
+  top: 15px;
+  font-weight: 100;
+  right: 20px;
+
+  &:hover {
+    transform: rotate(45deg) scale(1.15);
+  }
+}
+
+.work-item-detail-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.work-item-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(12, 12, 12, 0.77);
+  &:hover {
+    border: 1px solid rgba(47, 255, 210, 0.65);
+    transition-duration: 450;
+  }
+
+  &.open {
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: auto;
+    max-width: 1150px;
+    border: 1px solid rgba(47, 255, 210, 0.5);
+
+    & .work-media-wrapper,
+    & .work-title-wrapper {
+      width: 0;
+      opacity: 0;
+    }
+
+    & .work-item-detail-wrapper {
+      height: 0;
+    }
+  }
+}
+
+.work-section {
+  width: 100%;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  & ul {
+    overflow-x: scroll;
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+    &::-webkit-scrollbar {
+      display: none; /* Safari and Chrome */
+    }
+  }
+}
+
+.work-section ul {
+  @apply flex flex-row flex-wrap justify-center;
+}
+
+.work-detail-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.tech-pill {
+  padding: 1px 8px;
+}
+
+.page-wrapper {
+  max-width: 940px;
+}
+
+.content-box {
+  height: 720px;
+}
+
+.hero-section {
+  width: 100%;
+  color: #ddd;
+  //letter-spacing: 0.5px;
+}
+
+.contact-section {
+  text-align: right;
+}
+
+.splash-image {
+  background-image: url('../public/trains.jpg');
+  height: 300px;
+  width: 35%;
+  top: 20px;
+  background-size: cover;
+  position: fixed;
+  right: 30%;
+}
+
+body {
+  font-family: 'Univers LT 55', 'Neue Haas Grotesk Display Pro', Helvetica,
+    sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: subpixel-antialiased;
+
+  text-rendering: optimizeLegibility;
+}
+
+.spectral {
+  font-family: 'Spectral';
+}
+
+.work-detail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+//responsive queries
+
+// max-width indicates upper-limit
+
+@media (max-width: 690px) {
+  .work-item {
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: $max-width) {
+  .media-box {
+    max-width: 445px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .work-item-wrapper.open {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 720px) {
+  .work-item-wrapper.open {
+    margin-top: 10px;
+  }
+}
