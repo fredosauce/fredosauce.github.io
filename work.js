@@ -7,7 +7,7 @@ export const workItems = [
     media: ['/reactype-lg.gif'],
     client: null,
     blurb:
-      'Prototyping tool that allows users to quickly mock-up layouts and export them as code templates in Typescript. My role involved rebuilding the GUI as a drag-and-drop canvas, extending export options to include Nextjs, and implementing unit tests',
+      'Prototyping tool that allows users to quickly mock-up layouts and export them as code templates in Typescript. My role involved rebuilding the GUI as a drag-and-drop canvas, extending export options to include Next.js, and implementing unit tests',
     siteUrl: 'https://reactype.io/',
     repo: 'https://github.com/open-source-labs/ReacType',
     tech: ['react', 'typescript', 'materialui', 'jest', 'node', 'electron'],
