@@ -1,6 +1,17 @@
 $max-width: 1024px;
 $min-width: 360px;
 
+@font-face {
+  font-family: 'Univers';
+  src: url('/fonts/UniversLT55.ttf');
+}
+
+@font-face {
+  font-family: 'Spectral';
+  src: url('/fonts/Spectral-Medium.ttf');
+  src: url('/fonts/Spectral-Regular.ttf');
+}
+
 html {
   background-color: #090909;
   color: #f3f3ff;
@@ -102,9 +113,9 @@ html {
   transform: rotate(45deg);
   position: absolute;
   font-size: 2em;
-  font-family: 'Neue Haas Grotesk Display Pro';
+  font-family: 'Helvetica';
   top: 15px;
-  font-weight: 100;
+  font-weight: 400;
   right: 20px;
 
   &:hover {
@@ -212,8 +223,7 @@ html {
 }
 
 body {
-  font-family: 'Univers LT 55', 'Neue Haas Grotesk Display Pro', Helvetica,
-    sans-serif;
+  font-family: 'Univers', 'Neue Haas Grotesk Display Pro', Helvetica, sans-serif;
   overflow-x: hidden;
   -webkit-font-smoothing: subpixel-antialiased;
 

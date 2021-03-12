@@ -11,11 +11,7 @@ const closeSpring = {
 };
 
 const Pill = ({ text }) => {
-  return (
-    <div class='text-sm bg-gray-300 text-gray-900 inline-block font-semibold tech-pill mb-4 rounded-md mr-2'>
-      {text}
-    </div>
-  );
+  return <div class='tech-pill'>{text}</div>;
 };
 
 const Overlay = ({ isSelected }) => (

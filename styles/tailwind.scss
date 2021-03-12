@@ -1,3 +1,13 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+/* STYLING FOR ELEMENTS WITH HEAVY USAGE OF TAILWIND CLASSES HAVE BEEN MOVED AND CONSOLIDATED HERE */
+
+/* NEED TO IMPORT 'tailwind-loves-sass' TO IMPLEMENT @APPLY IN A WAY THAT WON"T ERROR  */
+
+.tech-pill {
+  @include apply(
+    'text-sm bg-gray-300 text-gray-900 inline-block font-semibold mb-4 rounded-md mr-2'
+  );
+}
