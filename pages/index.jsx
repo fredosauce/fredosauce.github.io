@@ -117,12 +117,10 @@ const HomePage = ({ workItems }) => {
           <p class='font-medium'>
             Fredo Chen is a
             <br />
-            <div class='resume-link-wrapper'>
-              frontend engineer
-              <br />& creative developer
-              <br />
-              based in Los Angeles
-            </div>
+            frontend engineer
+            <br />& creative developer
+            <br />
+            based in Los Angeles
           </p>
         </div>
         <div class='contact-section'>

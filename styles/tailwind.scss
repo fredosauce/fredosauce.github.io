@@ -2,6 +2,8 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@import 'tailwind-loves-sass';
+
 /* STYLING FOR ELEMENTS WITH HEAVY USAGE OF TAILWIND CLASSES HAVE BEEN MOVED AND CONSOLIDATED HERE */
 
 /* NEED TO IMPORT 'tailwind-loves-sass' TO IMPLEMENT @APPLY IN A WAY THAT WON"T ERROR  */
