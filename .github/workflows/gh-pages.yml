@@ -26,8 +26,9 @@ jobs:
       - run: touch out/.nojekyll
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+        uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
+          token: 9cbdb28013484bb46de67bad1e586313aee11de5 #unsure whether this should be accessed via secrets
           BRANCH: gh-pages # The branch the action should deploy to.
           FOLDER: out # The folder the action should deploy.
           CLEAN: true # Automatically remove deleted files from the deploy branch
