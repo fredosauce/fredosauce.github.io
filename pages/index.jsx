@@ -1,15 +1,7 @@
-import HeroBox from '../components/HeroBox';
-import { useState, useEffect } from 'react';
-import fetch from 'node-fetch';
-import Ticker from '../components/Ticker';
-import NavBar from '../components/NavBar';
-import Sandbox from './sandbox';
-import NextLink from 'next/link';
 import { motion, useMotionValue } from 'framer-motion';
-import { workItems } from '../public/work';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import Links from '../components/Links';
-import { useInvertedBorderRadius } from '../utils/use-inverted-border-radius';
+import { workItems } from '../public/work';
 
 const openSpring = { type: 'spring', duration: 0.6, bounce: 0.2 };
 const closeSpring = {
