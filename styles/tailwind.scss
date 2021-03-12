@@ -13,10 +13,6 @@
 
   .hero-section {
     @include apply('flex flex-row justify-between py-4 sm:py-12  mx-auto');
-
-    .contact-section {
-      @include apply('right');
-    }
   }
 
   .work-section {
