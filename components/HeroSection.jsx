@@ -23,7 +23,7 @@ const HeroSection = () => {
           </li>
           <li>
             <a href='/chenfredo-resume.pdf' target='_blank'>
-              resumé
+              résumé
             </a>
           </li>
           <li>
